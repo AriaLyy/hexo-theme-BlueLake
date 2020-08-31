@@ -28,8 +28,8 @@ widgets:
   - recent_posts
   - category
   - tag
-  #- archive # 归档
-  #- weibo  # 微博秀
+  - archive
+  #- weibo
   - links
 
 # Toc
@@ -71,10 +71,9 @@ baidusitemap:
 local_search: true ## Use a javascript-based local search engine, true/false.
 
 #Copyright
-copyright: 
+copyright:
   enable: true #display article copyright information, true/false.
-  describe: 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" style="text-decoration:underline; font-weight:bold;">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！ #copyright description
-  #  describe: 均采用[CC BY-NC-SA 3.0 CN](http://creativecommons.org/licenses/by-nc-sa/3.0/cn/) 
+  describe: #copyright description
 
 # MathJax Support
 mathjax:
@@ -83,19 +82,16 @@ mathjax:
 
 #Cmments
 comment:
-  # 设置见：https://github.com/gitalk/gitalk/blob/master/readme-cn.md#%E8%AE%BE%E7%BD%AE 
   gitalk:
-    enable: true ## If you want to use Gitment comment system please set the value to true.
-    owner: AriaLyy ## Your GitHub ID, e.g. username
-    repo: blog_comments ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
-    client_id: dce633374b09b7f58f92 ## GitHub client ID, e.g. 75752dafe7907a897619
-    client_secret: 4501c2b6dadda7cd2a0851eaf5fe29081be2bc0d ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
-    github_token: aff1ac804f42da5c2a46afdc21cd5cdb99ccd115 ## 
-    admin: AriaLyy  ## Github repo owner and collaborators, only these guys can initialize github issues.
-    language: zh-CN
-    pagerDirection: last # 评论排序方式， last为按评论创建时间倒叙，first为按创建时间正序。
-  
-  duoshuo: #chaooo ## duoshuo_shortname
+    enable: false ## If you want to use Gitment comment system please set the value to true.
+    owner: ## Your GitHub ID, e.g. username
+    repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+    client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+    client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+    admin: ## Github repo owner and collaborators, only these guys can initialize github issues.
+    language: zh-CN ## Language
+    pagerDirection: last # Comment sorting direction, available values are last and first.
+  duoshuo: ## duoshuo_shortname
   disqus: ## disqus_shortname
   livere: ## 来必力(data-uid)
   uyan: ## 友言(uid)
@@ -131,19 +127,19 @@ busuanzi: true ## If you want to use Busuanzi page views please set the value to
 
 # About page
 about:
-  photo_url: https://avatars2.githubusercontent.com/u/10437293?s=400&u=7464b440356490ace87e6e8d85ddde77918a56ef&v=4
+  photo_url: ## Your photo e.g. http://cdn.chaooo.top/blog/themeauthor.jpg
   items:
   - label: email
-    url: mailto:aria.lao@laoyuyu.me ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
-    title: aria.lao@laoyuyu.me ## Your email e.g.  zhenggchaoo@gmail.com
+    url: ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
+    title: ## Your email e.g.  zhenggchaoo@gmail.com
   - label: github
-    url: https://github.com/AriaLyy ## Your github'url e.g.  https://github.com/chaooo
-    title: AriaLyy ## Your github'name e.g.  chaooo
-#  - label: weibo
-#    url: ## Your weibo's url e.g.  http://weibo.com/zhengchaooo
-#    title: ## Your weibo's name e.g.  秋过冬漫长
+    url: ## Your github'url e.g.  https://github.com/chaooo
+    title: ## Your github'name e.g.  chaooo
+  - label: weibo
+    url: ## Your weibo's url e.g.  http://weibo.com/zhengchaooo
+    title: ## Your weibo's name e.g.  秋过冬漫长
 # - label: twitter
-#   url: 
+#   url:
 #   title:
 # - label: facebook
 #   url:
@@ -151,7 +147,9 @@ about:
 
 # Links widget. Empty links will hide widget.
 links:
-  - title: github
-    url: https://github.com/AriaLyy
-  - title: Aria框架
-    url: https://github.com/AriaLyy/Aria
+  - title: site-name1
+    url: http://www.example1.com/
+  - title: site-name2
+    url: http://www.example2.com/
+  - title: site-name3
+    url: http://www.example3.com/

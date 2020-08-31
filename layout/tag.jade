@@ -17,7 +17,9 @@ block content
         i.fa.fa-biao= page.tag  
     .post-archive
       .archive-wrap.tag-cat
-        each posts in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
+        //- each posts in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
+        - var allposts = page.posts.toArray().reduce((r, v, i, a, k = -v.date.format('YYYY')) => ((r[k] || (r[k] = [])).push(v), r), {})
+        each posts, year in allposts
           ul.listing
             for post in posts
                 li
