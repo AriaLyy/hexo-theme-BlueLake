@@ -37,8 +37,12 @@ html(lang='#{config.language}')
     link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
     if config.feed
       link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
+    //- gitalk 
     if theme.comment.gitalk.enable
       link(rel='stylesheet', type='text/css', href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css?v=" + theme.version)
+    //- 谷歌广告
+    if theme.ad.adsense.enable
+        script(data-ad-client='ca-pub-3376053787434659', async='', src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
     block title
 
   body

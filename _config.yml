@@ -155,3 +155,7 @@ links:
     url: https://github.com/AriaLyy
   - title: Aria框架
     url: https://github.com/AriaLyy/Aria
+
+ad:
+  adsense:
+    enable: true
